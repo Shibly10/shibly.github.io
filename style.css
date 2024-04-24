@@ -26,7 +26,7 @@ html {
   color: #333;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
   border-bottom: 0.3rem solid #333;
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
@@ -46,14 +46,15 @@ html {
 }
 
 .section-1-heading {
-  font-size: 6rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #fff;
   background-color: #e41c6f;
   padding: 0 3rem;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: 0.3rem;
   border-bottom: 0.3rem solid #fff;
   text-shadow: 0.2rem 0.2rem 1rem #555;
   transform: skew(-10deg);
@@ -74,7 +75,7 @@ html {
   font-size: 2rem;
   color: #fff;
   background-color: #e41c6f;
-  margin: 5rem 0;
+  margin: 1rem 0;
   padding: 0.5rem 3rem;
   letter-spacing: 0.3rem;
   transform: skew(-10deg);
@@ -146,10 +147,34 @@ html {
 }
 /* End of Navbar */
 
+/* Section n 1 */
+.section-n-1 {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0;
+  background-color: #eef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-about {
+  width: 70%;
+}
+
+.section-n-2 {
+  width: 100%;
+  height: 100vh;
+  padding: 15rem 0 10rem 0;
+  background-color: #eef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Section 2 */
 .section-2 {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 15rem 0 10rem 0;
   background-color: #fff;
   display: flex;
@@ -370,6 +395,9 @@ html {
   background-color: #222;
   flex-direction: column;
 }
+.social-media-ab {
+  margin-top: 5rem;
+}
 
 .social-media {
   margin-bottom: 5rem;
@@ -415,7 +443,7 @@ html {
 
 @media (max-width: 800px) {
   .section-1-heading {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .progress-bar {
@@ -425,7 +453,7 @@ html {
 
 @media (max-width: 600px) {
   .section-1-heading {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   .navbar-link {
@@ -470,7 +498,7 @@ html {
   }
 
   .section-1-heading {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 
   .navbar-link {
