@@ -1,41 +1,46 @@
-const navbar = document.querySelector(".navbar");
-const navbarOffsetTop = navbar.offsetTop;
-const sections = document.querySelectorAll("section");
-const navbarLinks = document.querySelectorAll(".navbar-link");
-const progress = document.querySelector(".progress-bars-wrapper");
-const progressBarPercents = [97, 89, 85, 87, 80, 70, 50];
+const scrollToPosition = (id) => {
+    const element = document.getElementById(id);
+    const y = element.getBoundingClientRect().top + window.scrollY - 180;
 
-window.addEventListener("scroll", () => {
-  mainFn();
+    window.scrollTo({top: y, behavior: 'smooth'});
+}
+
+document.getElementById('personal_info_link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToPosition('personal_info');
 });
 
-const mainFn = () => {
-  if (window.pageYOffset >= navbarOffsetTop) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
+document.getElementById('research_link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToPosition('research');
+});
 
-  sections.forEach((section, i) => {
-    if (window.pageYOffset >= section.offsetTop - 10) {
-      navbarLinks.forEach((navbarLink) => {
-        navbarLink.classList.remove("change");
-      });
-      navbarLinks[i].classList.add("change");
-    }
-  });
+document.getElementById('education_link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToPosition('education');
+});
 
-  if (window.pageYOffset + window.innerHeight >= progress.offsetTop) {
-    document.querySelectorAll(".progress-percent").forEach((el, i) => {
-      el.style.width = `${progressBarPercents[i]}%`;
-      el.previousElementSibling.firstElementChild.textContent =
-        progressBarPercents[i];
-    });
-  }
-};
+document.getElementById('achievements_link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToPosition('achievements');
+});
 
-mainFn();
+document.getElementById('experiences_link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToPosition('experiences');
+});
 
-window.addEventListener("resize", () => {
-  window.location.reload();
+document.getElementById('skills_link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToPosition('skills');
+});
+
+document.getElementById('projects_link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToPosition('projects');
+});
+
+document.getElementById('hobbies_link').addEventListener('click', function(event) {
+    event.preventDefault();
+    scrollToPosition('hobbies');
 });

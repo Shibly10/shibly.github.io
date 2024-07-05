@@ -1,307 +1,712 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nazmul Hasan</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Farhana Khan</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-      <!-- Navbar -->
-      <nav class="navbar center">
-        <a href="#section-1" class="navbar-link">Home</a>
-        <a href="#section-2" class="navbar-link">About</a>
-        <a href="#section-n-2" class="navbar-link">Education</a>
-        <a href="#section-n-1" class="navbar-link">Skill</a>
-        <a href="#section-3" class="navbar-link">Portfolio</a>
-        <a href="#section-4" class="navbar-link">Contact</a>
-      </nav>
+    <style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 
-      <!-- End of Navbar -->
-      <!-- Section 1 -->
-      <section class="section-1 center" id="section-1">
-        <img src="images/john-smith.jpg" alt="John Smith" class="person-img" />
-        <h1 class="section-1-heading">
-          Hi, I am Nazmul Hasan
-        </h1>
-        <h3 class="person-name">Currently working as a Lecturer, CSE, Presidency University.</h3>
-        
-        <a href="#section-3" class="section-1-btn">Projects</a>
-      </section>
-      <!-- End of Section 1 -->
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+        }
+    }
+    </style>
+    <link href="assets\dist\css\fonts.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div style="position: fixed; top: 0; width: 100%; z-index: 1; background-color: white;">
+        <div class="container">
+            <!---------------------------------------------------------------------------------------------------- NAVIGATION CONTAINER -->
+            <header class="blog-header py-3">
+                <div class="row flex-nowrap align-items-center">
+                    <div class="col text-center">
+                        <p class="blog-header-logo text-dark">Farhana Khan</p>
+                    </div>
+                </div>
+            </header>
+            
+            <nav class="navbar navbar-expand-lg navbar-light rounded">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#contents" aria-controls="contents" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
 
-      <section class="section-2" id="section-2">
-        <h1 class="section-heading section-2-heading">
-          About Me
-        </h1>
-        <h2 class="section-about">
-          Hi, I am Nazmul Hasan. I was born in the year 1998, Kishoregonj, Bangladesh. I lived a great life till now and greatful to Almighty for all the blessings.
-          <br><br> I passed my secondary and higher secondary education from Sylhet Cadet College. As my college was military based, I lived a adventurous and challanging life there. I am still connected to large portion of the alumni. I am also an executive member of the Old Cadet Associacion of Sylhet(OCAS). 
-          <br><br>I have completed my BSc in Computer Science from Bangladesh University of Engineering & Technology(BUET). I am blessed with many helpful senior brothers from BUET. After completion I visited Japan as an intern. While working there I realized my calling and came back to academics. Though I have a penchant for developing, I want to pursue higher studies and continue developing as a hobby. 
-          I have worked in various fields of Computer Science. I really enjoy the learning phase. After a while I found the field where I really want to contribute. I possess a profound passion for Natural Language Processing (NLP) and am deeply committed to advancing my expertise in this specialized field. My aspiration is to pursue meaningful opportunities that allow me to contribute significantly to the advancements and applications within the domain of NLP.</h2>
-          <div class="social-media-ab">
-            <a href="#none" class="social-media-link">
-              <i class="fab fa-github-square"></i>
-            </a>
-            <a href="#none" class="social-media-link">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a href="#none" class="social-media-link">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="#none" class="social-media-link">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-      </section>
+                <div class="collapse navbar-collapse justify-content-md-center" id="contents">
+                    <ul class="navbar-nav nav d-flex justify-content-between">
+                        <a class="p-2 text-muted content-link nav-link" id="personal_info_link">About Me</a>
+                        <a class="p-2 text-muted content-link nav-link" id="education_link">Education</a>
+                        <!-- <a class="p-2 text-muted content-link nav-link" href="#">Publications</a> -->
+                        <a class="p-2 text-muted content-link nav-link" id="research_link">Research</a>
+                        <a class="p-2 text-muted content-link nav-link" id="projects_link">Projects</a>
+                        <a class="p-2 text-muted content-link nav-link" id="skills_link">Skills</a>
+                        <a class="p-2 text-muted content-link nav-link" id="experiences_link">Experiences</a>
+                        <a class="p-2 text-muted content-link nav-link" id="achievements_link">Achievements</a>
+                        <a class="p-2 text-muted content-link nav-link" target=”_blank” href="https://drive.google.com/file/d/1VkP8HnLaeYZ5BxV2plW5nbnPoAY5solz/view?usp=sharing">CV</a>
+                        <a class="p-2 text-muted content-link nav-link" id="hobbies_link">Hobbies</a>
+                    </ul>
+                </div>
+            </nav>
 
-      <!-- End of section n 2 -->
-      <section class="section-n-2" id="section-n-2">
-        <h1 class="section-heading section-3-heading">Education</h1>
-      </section>
-      <!-- End of section n 2 -->
-
-      <!-- Section n-1 -->
-      <section class="section-n-1" id="section-n-1">
-        <h1 class="section-heading section-2-heading">Skills</h1>
-        <h2>Progress Bar percentage is based on the time invested by me over the years</h2>
-        <div class="progress-bars-wrapper">
-          <div class="progress-bar">
-            <p class="progress-text">
-              HTML
-              <span></span>%
-            </p>
-            <div class="progress-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">
-              CSS
-              <span></span>%
-            </p>
-            <div class="progress-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">
-              JavaScript
-              <span></span>%
-            </p>
-            <div class="progress-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">
-              SASS
-              <span></span>%
-            </p>
-            <div class="progress-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">
-              ReactJS
-              <span></span>%
-            </p>
-            <div class="progress-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">
-              NodeJS
-              <span></span>%
-            </p>
-            <div class="progress-percent"></div>
-          </div>
-          <div class="progress-bar">
-            <p class="progress-text">
-              MongoDB
-              <span></span>%
-            </p>
-            <div class="progress-percent"></div>
-          </div>
+            <hr/>
         </div>
-        <div class="services">
-          <div class="service">
-            <i class="far fa-lightbulb"></i>
-            <h2 class="service-heading">Creative</h2>
-          </div>
-          <div class="service">
-            <i class="fas fa-cut"></i>
-            <h2 class="service-heading">Problem Solving</h2>
-          </div>
-          <div class="service">
-            <i class="fas fa-tachometer-alt"></i>
-            <h2 class="service-heading">Fast</h2>
-          </div>
-          <div class="service">
-            <i class="fas fa-rocket"></i>
-            <h2 class="service-heading">Dynamic</h2>
-          </div>
-        </div>
-      </section>
-      <!-- End of Section 2 -->
-
-      <!-- Section 3 -->
-      <section class="section-3" id="section-3">
-        <h1 class="section-heading section-3-heading">My Projects</h1>
-        <div class="projects-wrapper center">
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">architect website</h2>
-              <h4 class="project-technologies">HTML / CSS / JS</h4>
-            </div>
-            <img src="images/project-1.jpg" class="project-img" />
-            <a
-              href="https://www.youtube.com/watch?v=3J-EFMzz94g"
-              class="project-link"
-              target="_blank"
-              >Go to Video</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Budget App</h2>
-              <h4 class="project-technologies">ReactJS</h4>
-            </div>
-            <img src="images/project-2.jpg" class="project-img" />
-            <a
-              href="https://www.youtube.com/watch?v=fDffQYs2WB0"
-              class="project-link"
-              target="_blank"
-              >Go to Video</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">wine house</h2>
-              <h4 class="project-technologies">HTML / CSS / JS</h4>
-            </div>
-            <img src="images/project-3.jpg" class="project-img" />
-            <a
-              href="https://www.youtube.com/watch?v=jtmuopTpzGE"
-              class="project-link"
-              target="_blank"
-              >Go to Video</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">task manager</h2>
-              <h4 class="project-technologies">ReactJS</h4>
-            </div>
-            <img src="images/project-4.jpg" class="project-img" />
-            <a
-              href="https://www.youtube.com/watch?v=fqup-BL3VjI"
-              class="project-link"
-              target="_blank"
-              >Go to Video</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">The Road</h2>
-              <h4 class="project-technologies">HTML / CSS / JS</h4>
-            </div>
-            <img src="images/project-5.jpg" class="project-img" />
-            <a
-              href="https://www.youtube.com/watch?v=qmyN7lYY_xo"
-              class="project-link"
-              target="_blank"
-              >Go to Video</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">food recipe app</h2>
-              <h4 class="project-technologies">ReactJS</h4>
-            </div>
-            <img src="images/project-6.jpg" class="project-img" />
-            <a
-              href="https://www.youtube.com/watch?v=d1vT4kkTCaw"
-              class="project-link"
-              target="_blank"
-              >Go to Video</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">slideshow</h2>
-              <h4 class="project-technologies">HTML / CSS / JS</h4>
-            </div>
-            <img src="images/project-7.jpg" class="project-img" />
-            <a
-              href="https://www.youtube.com/watch?v=1qhSSp2q7n4"
-              class="project-link"
-              target="_blank"
-              >Go to Video</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">Hamburger menu</h2>
-              <h4 class="project-technologies">HTML / CSS / JS</h4>
-            </div>
-            <img src="images/project-8.jpg" class="project-img" />
-            <a
-              href="https://www.youtube.com/watch?v=9Q7wy8r3i8w"
-              class="project-link"
-              target="_blank"
-              >Go to Video</a
-            >
-          </div>
-          <div class="project">
-            <div class="project-text">
-              <h2 class="project-name">CSS grid menu</h2>
-              <h4 class="project-technologies">HTML / CSS / JS</h4>
-            </div>
-            <img src="images/project-9.jpg" class="project-img" />
-            <a href="" class="project-link" target="_blank">Go to Video</a>
-          </div>
-        </div>
-      </section>
-      <!-- End of Section 3 -->
-
-      <!-- Section 4 -->
-      <section class="section-4" id="section-4">
-        <h1 class="section-heading section-4-heading">Contact Me</h1>
-        <form class="contact-form center">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <input type="submit" value="Submit" class="contact-form-btn" />
-        </form>
-      </section>
-      <!-- End of Section 4 -->
-
-      <!-- Section 5 -->
-      <footer class="section-5 center">
-        <div class="social-media">
-          <a href="#none" class="social-media-link">
-            <i class="fab fa-github-square"></i>
-          </a>
-          <a href="#none" class="social-media-link">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a href="#none" class="social-media-link">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-          <a href="#none" class="social-media-link">
-            <i class="fab fa-instagram-square"></i>
-          </a>
-        </div>
-        <p class="copyright">
-          Copyright &copy; CodeAndCreate. All Rights Reserved
-        </p>
-      </footer>
-      <!-- End of Section 5 -->
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <main role="main" class="container" style="padding-top: 150px;"> 
+        <div class="row my-3 pb-4" id="personal_info">            <!----------------------------------------- PERSONAL INFO DIV -->
+
+            <aside class="col-md-4">
+                
+                <div class="">
+                    <img src="assets\brand\profile_1.jpeg" class="profile-image" alt="profile image">
+                </div>
+            </aside>
+
+            <div class="col-md-8">
+                
+                <div class="p-4 bg-light rounded h-100">
+                    <h4>About</h4>
+                    Hi, I'm Farhana, a <span class="bold">Software Engineer</span> at <a class="anchor-link bold" href="https://www.enosisbd.com" target="_blank">Enosis Solutions</a>. I enjoy the process of learning and implementing new technologies. I am a quick learner and a team player. 
+                    <br><br>
+                    I am also an <span class="bold">aspiring researcher</span>. I engage in academic research during my time outside of my office hours. My primary field of interest is <strong>Human-Computer Interaction</strong> and I am also passionate about <strong>Visualisation</strong> and <strong>VR/AR</strong> technologies. I am a self-motivated person and I love to take challenges. 
+                    <br><br>
+                    Beyond the professional realm, I enjoy painting, crafting and cherish a passion for diverse cuisines. I find joy in expressing my thoughts through art and discovering new recipes to experiment with in the kitchen.
+                           
+                    <div class="mt-3">
+                        <div> 
+                            <a href="mailto:farhanakhanhp@gmail.com" class="anchor-link bold"><img src="assets/brand/mail.svg" class="mr-3" alt="mail:"/>farhanakhanhp@gmail.com</a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/Farhana100" class="anchor-link bold" target="_blank"><img src="assets/brand/github.svg" class="mr-3" alt="github:"/>Farhana100</a>
+                        </div> 
+                        <div>
+                            <a href="https://codeforces.com/profile/Oblivious__" class="anchor-link bold" target="_blank"><img src="assets\brand\cf.webp" style="width: 25px; height: auto;" class="mr-3" alt="codeforces:"/>Codeforces: Oblivious__</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="blog-post" id="education">
+            <h2 class="mb-4">Education</h2>
+
+            <div class="container">
+                <div class="justify-content-between d-flex">
+                    <h5><a class="text-dark" href="https://www.buet.ac.bd" target="_blank">Bangladesh University of Engineering and Technology</a></h5>
+                    <p class="text-info font-weight-bold">March 2018 - May 2023</p>
+                </div>
+                <div>
+                    <p>
+                        B.Sc. in Computer Science and Engineering<br>
+                        <!-- CGPA: 3.41/4.00 -->
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+        </div>
+
+        <div class="blog-post" id="research">
+            <h2 class="mb-4">Research</h2>
+
+            
+            <div class="container pb-5">
+                <div class="justify-content-between d-flex row">
+                    <div class="col-md-8">
+                        <h5>ChatGPT-Supported EFL Learning for Underprivileged Learners of Bangladesh</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-info font-weight-bold text-right">Aug 2023 - Current</p>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <img src="assets\images\chatgpt.jpeg" class="img-fluid" alt="ChatGPT-Supported EFL learning image">
+                    </div>
+                    <div class="col-md-8">
+                        <p>In this work we are in pursuit of exploring the potential of existing LLMs to guide non-native english speaking children to improve their proficiency in english writing. I am developing a mobile app to be used as the ChatGPT supported EFL learning platform.</p>
+                        <p class="font-weight-bold">Field: Human-Computer Interaction</p>
+                        <ul class="alignList">
+                            <li><b>Supervisor</b><a class="text-dark anchor-link" href="https://cse.buet.ac.bd/faculty_list/detail/razi" target="_blank">Dr. A. B. M. Alim Al Islam</a>, Professor, CSE, BUET</li>
+                            <li><b>Ideator</b><a class="text-dark" href="https://ist.psu.edu/directory/mfn5333" target="_blank" class="anchor-link">Mahjabin Nahar</a>, Graduate Teaching Assistant at Penn State. Penn State College of Information Sciences and Technology</li>
+                            <li><b>Collaborative Work</b> With Penn State University Under the Supervision Of <a class="text-dark anchor-link" href="https://pike.psu.edu/dongwon" target="_blank">Dongwon Lee, Ph.D.</a> Penn State University, USA</li>
+                            <li><b>Dev Tools and Frameworks</b> React-native, Django, Firebase, Twillo, ChatGPT API</li> 
+                        </ul>
+
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="container pb-5">
+                <div class="justify-content-between d-flex row">
+                    <div class="col-md-8">
+                        <h5>Short Videos, Big Impacts: Unveiling the Secret to Captivating Short Videos</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-info font-weight-bold text-right">Aug 2023 - Dec 2023</p>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-8">
+                        <p>
+                            Short videos or reels, a new form of entertainment, have become quite popular among the users of Social Networking Sites and have considerably boosted the user engagement. However, some recent studies have shown that frequent context switching caused by short videos can have detrimental effects on human cognition. In this work, we have explored the impact of short videos on human cognition and also proposed a novel approach for content recommendation in order to reduce their detrimental effects. This work is currently under review in a renowned conference.
+                        </p>
+                        <p class="font-weight-bold">Field: Human-Computer Interaction, Recommendation Systems</p>
+                        <ul class="alignList">
+                            <li><b>Supervisor</b><a class="text-dark anchor-link" href="https://cse.buet.ac.bd/faculty_list/detail/sadia" target="_blank">Dr. Sadia Sharmin</a>, Associate Professor, CSE, BUET</li>
+                            <!-- <li><b>My Contribution</b> Formulated the core idea, designed questionnaire and interviewed participants.</li> -->
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets\images\reels_1.webp" class="img-fluid" alt="Personalized recommendation">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="container pb-5">
+                <div class="justify-content-between d-flex row">
+                    <div class="col-md-8">
+                        <h5>Risking Privacy for Personalized Recommendations: A Study of Awareness And Security Concern of Recommendation System Users</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-info font-weight-bold text-right">Aug 2023 - Current</p>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <img src="assets\images\persrec.jpg" class="img-fluid" alt="Personalized recommendation">
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            In this work, we have investigated the awareness and security concerns of recommendation system users. 
+                            We are interviewing participants and analyzing the data using thematic analysis.
+                        </p>
+                        <p class="font-weight-bold">Field: Human-Computer Interaction, Recommendation Systems</p>
+                        <ul class="alignList">
+                            <li><b>Supervisor</b><a class="text-dark anchor-link" href="https://cse.buet.ac.bd/faculty_list/detail/sadia" target="_blank">Dr. Sadia Sharmin</a>, Associate Professor, CSE, BUET</li>
+                            <!-- <li><b>My Contribution</b> Formulated the core idea, designed questionnaire and interviewed participants.</li> -->
+                            <li><b>Tools for Quantitative Analysis</b> SmartPLS</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="container pb-5">
+                <div class="justify-content-between d-flex row">
+                    <div class="col-md-8">
+                        <h5>Privacy Perspectives of Shared Mobile Phones Within Households</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-info font-weight-bold text-right">Feb 2023 - Current</p>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-8">
+                        <p>
+                            In this work, we are investigating the privacy perspectives of shared mobile phones within households. 
+                            I have interviewed 13 participants. Currently we are in the process of more data collection and analysis of the data using thematic analysis.
+                        </p>
+                        <p class="font-weight-bold">Field: Human-Computer Interaction</p>
+                        <ul class="alignList">
+                            <li><b>Supervisor</b><a class="text-dark" href="https://cse.buet.ac.bd/faculty_list/detail/razi" target="_blank" class="anchor-link">Dr. A. B. M. Alim Al Islam</a>, Professor, CSE, BUET</li>
+                            <li><b>Ideator</b><a class="text-dark" href="https://rudaibaadnin.github.io/" target="_blank" class="anchor-link">Rudaiba Adnin</a>, Ph.D. Student at Northeastern University</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/share_phone.avif" class="research-image" alt="Privacy Perspectives of Shared Mobile Phones Within Households">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container pb-5">
+                <div class="justify-content-between d-flex row">
+                    <div class="col-md-8">
+                        <h5>On The Impact and Detection Of Knowledge Graph Based Semantic Aware Shilling Attacks On Recommendation Systems</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-info font-weight-bold text-right">Jun 2022 - Current</p>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-4">
+                        <img src="assets\images\hacker.jpeg" class="img-fluid" alt="shillng attack">
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            <span class="bold">Undergraduate Thesis</span>  <br>
+                            In this work, I have uncovered the underlying theory of the improved attack performance and undetectability of a knowledge graph based state of the art shilling attack model. I have implemented 3 different types of recommendation systems, 6 types of Shilling Attacks (including 1 obfuscation) and 3 benchmark shilling attack detection methods and evaluated their performance on the renowned MovieLens and YahooMovies datasets. 
+                        </p>
+                        <p class="font-weight-bold">Field: Recommendation System, Machine Learning, Security</p>
+                        <ul class="alignList">
+                            <li><b>Supervisor</b><a class="text-dark anchor-link" href="https://cse.buet.ac.bd/faculty_list/detail/mahmudanaznin" target="_blank">Dr. Mahmuda Naznin</a>, Professor, CSE, BUET</li>
+                            <li><b>Dev Tools and Frameworks</b>  Python, NumPy, Pandas</li> 
+                            <li><a class="text-dark anchor-link bold" href="https://docs.google.com/presentation/d/1NfZulRH2zQjc526kZpvFiHjR6Ti5neWG/edit?usp=drive_link&ouid=106437787980840580335&rtpof=true&sd=true" target="_blank">Thesis Defense Slide</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="blog-post" id="projects">
+            <h2>Projects</h2>
+
+            <div class="row mb-2 ">
+
+                <!-- 1.2 -->
+                <!-- <div class="col-md-6 my-auto">
+                    <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm position-relative project">
+                        
+                        <div class="row-auto d-none d-lg-block container-fluid p-0">
+                            <img src="assets\images\ml.PNG" class="bd-placeholder-img" width="100%" height="200px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+                        </div>
+
+                        <div class="row p-4 m-1 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-graphics">Graphics</strong>
+                            <h3 class="mb-0">Shooting Game</h3>
+                            <div class="mb-1 text-muted">WebGL, Express.js, Vue.js</div>
+                            <p class="card-text mb-auto">Desc desc desc Desc desc descDesc desc descDesc desc descDesc desc descDesc desc descDesc desc descDesc desc descDesc desc descDesc desc descDesc desc descDesc desc descDesc desc descDesc desc descDesc desc desc</p>
+                            <br>
+                            <a href="https://github.com/Farhana100/Bangla_Image_Captioning" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <!-- 1.3 -->
+                <div class="col-md-6 my-auto">
+                    <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm position-relative project">
+                        
+                        <div class="row-auto d-none d-lg-block container-fluid p-0">
+                            <img src="assets\images\ml.PNG" class="bd-placeholder-img" width="100%" height="200px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+                        </div>
+
+                        <div class="row p-4 m-1 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">Machine Learning</strong>
+                            <h3 class="mb-0">Image Captioning in Bengali</h3>
+                            <div class="mb-1 text-muted">Python, TensorFlow, Keras, OpenCV</div>
+                            <p class="card-text mb-auto">The project aims to generate captions in Bengali using the benchmark image captioning machine learning model "Show, Attend and Tell", trained on the eminent COCO dataset translated to Bengali.</p>
+                            <br>
+                            <a href="https://github.com/Farhana100/Bangla_Image_Captioning" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-md-6 my-auto">
+                    <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm position-relative project">
+                        
+                        <div class="row-auto d-none d-lg-block container-fluid p-0">
+                            <img src="assets\images\cnn.png" class="bd-placeholder-img" width="100%" height="200px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+                        </div>
+
+                        <div class="row p-4 m-1 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">Machine Learning</strong>
+                            <h3 class="mb-0">CNN From Scratch</h3>
+                            <div class="mb-1 text-muted">Python, NumPy</div>
+                            <p class="card-text mb-auto">This is a simple implementation of a convolutional neural network (CNN) from scratch using only numpy. The network is trained on the NumtaDB dataset to recognize Bengali numerical digits.</p>
+                            <br>
+                            <a href="https://github.com/Farhana100/CNN_from_scratch" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-md-6 my-auto">
+                    <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm position-relative project">
+                        
+                        <div class="col p-4 m-1 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Software Development</strong>
+                            <h3 class="mb-0">ManageCasa</h3>
+                            <div class="mb-1 text-muted">React.js, REST, Django and PostgreSQL</div>
+                            <p class="card-text mb-auto">ManageCasa is a comprehensive web-based property management system designed to simplify and streamline the day-to-day operations of property managers and landlords.</p>
+                            <br>
+                            <a href="https://lucid.app/lucidchart/c4a3a088-cfe6-47d7-a1a0-69e99db5b6b5/edit?viewport_loc=-1469%2C1143%2C2384%2C1354%2C0_0&invitationId=inv_5078cf21-50e4-4877-8146-bb848cfd34eb" target="_blank">Class Diagram</a>
+                            <a href="https://lucid.app/lucidchart/41bb7b01-3cd4-4b8e-bd61-8e1293f67ea5/edit?viewport_loc=725%2C-82%2C4064%2C2308%2C0_0&invitationId=inv_05fa413f-c755-4c48-ae4a-8a6d7407e4f3"  target="_blank">ERD</a>
+                            <a href="https://www.figma.com/file/gA3MgcgT2OzuIudK39HyLt/CSE326-Mock-UI?type=design&node-id=168-707&mode=design" target="_blank">UI Design</a>
+                            <a href="https://github.com/Farhana100/ManageCasa" target="_blank">Code</a>
+                        </div>
+
+                        <div class="col-auto d-none d-lg-block container-fluid p-0">
+                            <img src="assets\images\appart.jpg" class="bd-placeholder-img" height="100%" width="200px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+                        </div>
+                    </div>
+                </div>
+         
+                <!-- 4 -->
+                <div class="col-md-6 my-auto">
+                    <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm position-relative project">
+                        
+
+                        <div class="col p-4 m-1 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Software Development</strong>
+                            <h3 class="mb-0">Online Marketplace</h3>
+                            <div class="mb-1 text-muted">Django, Oracle DBMS, Bootstrap</div>
+                            <p class="card-text mb-auto">Replica of a popular online marketplace, developed with the intention to learn database management as the term project of the course CSE216: Database Sessional, Level-2 Term-2, CSE, BUET</p>
+                            <br>
+                            <a href="https://drive.google.com/file/d/1jDwF7WuPzP5xDzcn5j-mDDsOEceEhtR0/view?usp=sharing" target="_blank">Demo Video</a>
+                            <a href="https://github.com/Farhana100/Bikroy_dot_com#erd" target="_blank">ERD</a>
+                            <a href="https://github.com/Farhana100/Bikroy_dot_com" target="_blank">Code</a>
+                        </div>
+
+                        <div class="col-auto d-none d-lg-block container-fluid p-0">
+                            <img src="assets/images/market_1.jpg" class="bd-placeholder-img" height="100%" width="200px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 5 -->
+                <div class="col-md-6 my-auto">
+                    <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm position-relative project">
+                        
+                        <div class="row-auto d-none d-lg-block container-fluid p-0">
+                            <img src="assets\images\compiler.png" class="bd-placeholder-img" width="100%" height="200px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+                        </div>
+
+                        <div class="row p-4 m-1 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-warning">Compiler</strong>
+                            <h3 class="mb-0">A Simple Compiler</h3>
+                            <div class="mb-1 text-muted">C++, YACC, Lex, Shell</div>
+                            <p class="card-text mb-auto">A simple compiler for the language described in the book "Compilers: Principles, Techniques, and Tools" by Aho, Sethi, and Ullman. It is not a complete compiler, but it does implement symbol table, a lexer, a parser, and a code generator.</p>
+                            <br>
+                            <a href="https://github.com/Farhana100/Compiler" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 1.1 -->
+                <div class="col-md-6 my-auto">
+                    <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm position-relative project">
+                        
+                        <div class="row-auto d-none d-lg-block container-fluid p-0">
+                            <img src="assets\images\ray.PNG" class="bd-placeholder-img" width="100%" height="200px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+                        </div>
+
+                        <div class="row p-4 m-1 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-graphics">Graphics</strong>
+                            <h3 class="mb-0">Ray Tracing</h3>
+                            <div class="mb-1 text-muted">OpenGL, C++</div>
+                            <p class="card-text mb-auto">
+                                This project is an implementation of realistic image generation of 3D geometric shapes using ray tracing with appropriate illumination techniques. It involves casting rays from a virtual camera, determining shape intersections, calculating lighting contributions, and applying illumination techniques like ambient lighting, diffuse and specular reflection, shadows, and global illumination for achieving realism. Specific algorithms handle ray-surface intersections, enhancing realism through considerations for materials, textures and advanced effects.
+                            </p>
+                            <br>
+                            <a href="https://github.com/Farhana100/Ray-Tracing.git" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 6 -->
+                <div class="col-md-6 my-auto">
+                    <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm position-relative project">
+                        
+
+                        <div class="col p-4 m-1 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Software Development</strong>
+                            <h3 class="mb-0">Picture Puzzle</h3>
+                            <div class="mb-1 text-muted">Django, MySQL</div>
+                            <p class="card-text mb-auto">Picture Puzzle is a web-based puzzle game developed for the Computer Science and Engineering Festival (CSE Fest) in 2022. It is designed to be responsive and can be played on desktop and mobile devices.</p>
+                            <br>
+                            <a href="https://github.com/buetcsefest2022/picture-puzzle" target="_blank">Code</a>
+                        </div>
+
+                        <div class="col-auto d-none d-lg-block container-fluid p-0">
+                            <img src="assets\images\puzz.jpeg" class="bd-placeholder-img" height="100%" width="200px" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+        </div>
+
+        <div class="blog-post" id="skills">
+            <h2>Skills</h2>
+
+            <div class="container d-flex justify-content-center">
+                <table class="table w-75">
+                    <tbody>
+                        <tr>
+                            <th>User Research</th>
+                            <td>Interview, Survey</td>
+                        </tr>
+
+                        <!-- <tr>
+                            <th>Qualitative Analysis</th>
+                            <td>Open Coding, Thematic Analysis</td>
+                        </tr>
+
+                        <tr>
+                            <th>Quantitative Analysis</th>
+                            <td>Pearson Correlation Analysis, Chi-Squared Test</td>
+                        </tr> -->
+
+                        <tr>
+                            <th>Research Methods</th>
+                            <td>Mixed-method, Experiment, Data Scraping</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Scripting</th>
+                            <td>LaTeX, Shell Script</td>
+                        </tr>
+
+                        <tr>
+                            <th>Languages</th>
+                            <td>C/C++, Python, JavaScript, SQL, Bash, JAVA, HTML, CSS, Intel 8086 Assembly Language</td>
+                        </tr>
+
+                        <tr>
+                            <th>Frameworks</th>
+                            <td>Express.js, Django, Reactjs, Vue.js, Three.js, Mongoose, React Native, React.js, Tensorflow</td>
+                        </tr>
+
+                        <tr>
+                            <th>Tools</th>
+                            <td>Source Tree, Jira, Git, VS Code, JetBrains Products, Wireshark, Atmel Studio, Logisim, Emu8086, Cisco Packet Tracer, ns-3, Docker, Wireshark, Android Studio, Logisim</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>Database</th>
+                            <td>MongoDB, Oracle, SQLite</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>API</th>
+                            <td>REST, OpenGL, WebGL</td>
+                        </tr>
+
+                        <tr>
+                            <th>Platforms</th>
+                            <td>Linux, Windows, Android</td>
+                        </tr>
+
+                        <tr>
+                            <th>Other Skills</th>
+                            <td>Communication, Time Management, Detail Oriented, Teamwork, Problem Solving, Critical Thinking, Creativity, Adaptability, Self-Motivation, Self-Learning</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <hr>
+        </div>
+        
+        <div class="blog-post" id="experiences">
+            <h2 class="mb-4">Experiences</h2>
+
+            <div class="container">
+                <div class="justify-content-between d-flex">
+                    <div>
+                        <h5><a class="text-dark" href="https://www.enosisbd.com" target="_blank">Enosis Solutions</a></h5>
+                        <p class="font-weight-bold">Software Engineer</p>
+                    </div>
+                    <div>
+                        <p class="text-info font-weight-bold text-right">Jun 2023 - Current</p>
+                        <p class="text-muted  text-right">Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+                <p>I actively participate in a team environment, contributing to the development of an immersive learning platform. This platform is designed for real-time web-based Virtual Reality (VR) and Augmented Reality (AR) training, fostering a dynamic 3D collaboration experience during web conferences. My role involves working with the team to ensure the seamless integration of advanced technologies, creating an interactive and engaging environment for effective virtual training and collaborative experiences.</p>
+
+                <div>
+                    <h6>Languages and Frameworks</h6>
+                    Vue.js, Three.js, WebGL, Node.js, Express.js, MongoDB, Mongoose, JavaScript, C++
+                </div>
+            </div>
+
+            <hr>
+        </div>
+ 
+        <div class="blog-post" id="achievements">
+            <h2 class="mb-4">Achievements</h2>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <ul>
+                        <li>
+                            <div class="justify-content-between d-flex row">
+                                <div class="col-md-8">
+                                    <strong>Champion</strong> in Ada Lovelace National Girls Programming Contest, Bangladesh - 2021 
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="https://toph.co/c/ada-lovelace-national-girls-2021/standings" target="_blank" class="anchor-link bold text-right">Standings</a>
+                                </div>
+                            </div>
+                            Dec 2021 <br>
+                            Team Name: BUET_A_Team_Has_No_Name <br>
+                        </li>
+                        <li>
+                            <div class="justify-content-between d-flex row">
+                                <div class="col-md-8">
+                                    <strong>Champion</strong> in National Girls Programming Contest, Bangladesh - 2021 
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="https://clist.by/standings/national-girls-programming-contest-2021-31261402/" target="_blank" class="anchor-link bold text-right">Standings</a>
+                                </div>
+                            </div>
+                            Nov 2021 <br>
+                            Team Name: BUET_A_Team_Has_No_Name <br>
+                        </li>
+                        <li>
+                            <div class="justify-content-between d-flex row">
+                                <div class="col-md-8">
+                                    <strong>Champion</strong> in National Girls Programming Contest, Bangladesh - 2019
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="https://toph.co/c/ngpc-2019/standings" target="_blank" class="anchor-link bold text-right">Standings</a>
+                                </div>
+                            </div>
+                            Nov 2019 <br>
+                            Team Name: BUET_A_Team_Has_No_Name <br>
+                        </li>
+                        <li>
+                            <strong>11th</strong> in National High School Programming Contest, Bangladesh - 2015 <br>
+                            National Level <br>
+                        </li>
+                    </ul>
+    
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcsebuet%2Fposts%2Fpfbid02mJKtRrvfCJNW7wKQ2q9CGCmsVBSwqeHQsXNEmce56oUXxfPQX4r5T2hKwBK62LFkl&show_text=true&width=100%" width="100%" height="483" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+
+            </div>
+            
+            <div class="container">
+
+            </div>
+
+            <hr>
+        </div>
+
+
+        <div class="blog-post" id="hobbies">
+            <h2>Hobbies</h2>
+            <p>
+                I find peace and joy in expressing my thoughts through art. Here are some of my creations.
+            </p>
+            <div class="container-fluid">
+
+                <div class="row my-auto pb-4">
+
+                    <!-- <div class="col-md-4">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img src="assets/images/paintings/1.jpg" class="profile-image">
+                                </div>
+                                <div class="back">
+                                    <p style="margin-top: 40%">Back!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/1.jpg" class="profile-image">
+                    </div>
+
+                    <!-- <div class="col-md-4">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img src="assets/images/paintings/2.jpg" class="profile-image">
+                                </div>
+                                <div class="back">
+                                    <p style="margin-top: 40%">Back!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/2.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/3.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/4.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/5.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/6.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/7.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/8.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/9.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/10.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/14.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-4">
+                        <img src="assets/images/paintings/12.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-5">
+                        <img src="assets/images/paintings/13.jpg" class="profile-image">
+                    </div>
+        
+                    <div class="col-md-7">
+                        <img src="assets/images/paintings/11.jpg" class="profile-image">
+                    </div>
+        
+        
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="blog-footer">
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+    </body>
 </html>
